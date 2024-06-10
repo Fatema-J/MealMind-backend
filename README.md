@@ -32,6 +32,7 @@
 - Back-end: **Node.js, Express.js, MongoDB**
 - Project Management: **Trello, Slack**
 - Designing Phase: **Canva**
+    - [component hierarchy diagram](https://www.canva.com/design/DAGHxAJo_jw/vXaIVxrFJjrdfCSdMPg1ng/edit?utm_content=DAGHxAJo_jw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) 
 
 ---
 ### Deployment and Live Demo
