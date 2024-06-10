@@ -12,7 +12,7 @@
 ---
 
 ### Key Features
-1. Personalized Questionnaire
+1. Personalized Plan
 2. Publish and Share
 3. Community Interaction
 
