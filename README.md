@@ -1,1 +1,51 @@
-# project3-backend
+# Project 3 Express App
+
+### Team Members
+- Fatema Aljonaid - [Github](https://github.com/Fatema-J)
+- Hawraa Alattar -  [Github](https://github.com/hawraalattar)
+- Jenan Alawadhi - [Github](https://github.com/jenanalawadhi1)
+---
+
+### Overview
+The AI-Powered Custom Diet Planner is an innovative web application designed to create personalized diet plans for users. By leveraging artificial intelligence, the app tailors meal recommendations based on user responses to a questionnaire. Whether you’re aiming for weight loss, muscle gain, or overall health improvement, our app has you covered.
+
+---
+
+### Key Features
+1. Personalized Questionnaire
+2. Publish and Share
+3. Community Interaction
+
+---
+### Getting Started
+1. Clone both backend and front-end repositories.
+    - git@github.com:Fatema-J/project3-backend.git
+    - git@github.com:-----/project3-frontend.git
+2. Install dependencies for each app (`npm install`).
+3. Set up your MongoDB database.
+4. Run the front-end and back-end servers.
+5. Access the app locally.
+---
+
+### Technologies Used
+- Front-end: **React**
+- Back-end: **Node.js, Express.js, MongoDB**
+- Project Management: **Trello, Slack**
+- Designing Phase: **Canva**
+
+---
+### Deployment and Live Demo
+- [Link to deployed site]
+- [Link to Trello board]
+- Screenshots:
+  !Screenshot 1
+  !Screenshot 2
+
+---
+### Additional Features
+- [ ] Dark Theme
+- [ ] Different plan categories (Vegan, Keto, Gluten-free.. etc)
+
+---
+### Credits
+- [List any third-party resources or contributors]
