@@ -41,8 +41,8 @@
 - [Link to deployed site]
 - [Link to Trello board]
 - Screenshots:
-  !Screenshot 1
-  !Screenshot 2
+  ![Welcome Page](./images/MealMind%20UI.png)
+  ![Login Page](./images/MealMind%20Login%20UI.png)
 
 ---
 ### Additional Features
