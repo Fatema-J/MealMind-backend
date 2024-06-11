@@ -2,9 +2,9 @@
 
 ### Team Members
 
-- Fatema Aljonaid - [Github](https://github.com/Fatema-J)
-- Hawraa Alattar - [Github](https://github.com/hawraalattar)
-- Jenan Alawadhi - [Github](https://github.com/jenanalawadhi1)
+- Fatema Aljonaid - [Github](https://github.com/Fatema-J) | [Linkedin](https://www.linkedin.com/in/fatema-aljonaid/)
+- Hawraa Alattar - [Github](https://github.com/hawraalattar) | [Linkedin](https://www.linkedin.com/in/hawraalattar/)
+- Jenan Alawadhi - [Github](https://github.com/jenanalawadhi1) | [Linkedin](https://www.linkedin.com/in/jenan-alawadhi/)
 
 ---
 
@@ -24,7 +24,7 @@
 
 ### Getting Started
 
-1. Clone both [backend](https://github.com/Fatema-J/MealMind-backend) and [front-end](git@github.com:jenanalawadhi1/MealMind-FrontEnd.git) repositories.
+1. Clone both [backend](https://github.com/Fatema-J/MealMind-backend) and [frontend](https://github.com/jenanalawadhi1/MealMind-FrontEnd) repositories.
    - `git@github.com:Fatema-J/MealMind-backend.git`
    - `git@github.com:jenanalawadhi1/MealMind-FrontEnd.git`
 2. Install dependencies for each app (`npm install`).
