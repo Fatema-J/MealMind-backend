@@ -2,6 +2,8 @@ const express = require('express')
 const logger = require('morgan')
 const cors = require('cors')
 
+const mealPlanRouter = require('./routes/MealPlanRouter')
+
 const PORT = process.env.PORT || 3001
 
 const db = require('./db')
@@ -12,6 +14,8 @@ app.use(cors())
 app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
+
+app.use('/mealplan', mealPlanRouter)
 
 app.use('/', (req, res) => {
   res.send(`Connected!`)
