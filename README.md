@@ -39,7 +39,7 @@
 ---
 ### Deployment and Live Demo
 - [Link to deployed site]
-- [Link to Trello board]
+- [Trello board](https://trello.com/b/eIbm4xlp/mealmind)
 - Screenshots:
   ![Welcome Page](./images/MealMind%20UI.png)
   ![Login Page](./images/MealMind%20Login%20UI.png)
