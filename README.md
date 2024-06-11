@@ -1,4 +1,4 @@
-# MealMind 🥗🍛
+# MealMind Backend🥗🍛
 
 ### Team Members
 
@@ -24,9 +24,9 @@
 
 ### Getting Started
 
-1. Clone both backend and front-end repositories.
+1. Clone both [backend](https://github.com/Fatema-J/MealMind-backend) and [front-end](git@github.com:jenanalawadhi1/MealMind-FrontEnd.git) repositories.
    - `git@github.com:Fatema-J/MealMind-backend.git`
-   - [`git@github.com:-----/project3-frontend.git`](https://github.com/jenanalawadhi1/MealMind-FrontEnd)
+   - `git@github.com:jenanalawadhi1/MealMind-FrontEnd.git`
 2. Install dependencies for each app (`npm install`).
 3. Set up your MongoDB database.
 4. Run the front-end and back-end servers.
