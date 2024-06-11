@@ -34,6 +34,7 @@
 - Designing Phase: **Canva**
     - [component hierarchy diagram](https://www.canva.com/design/DAGHxAJo_jw/vXaIVxrFJjrdfCSdMPg1ng/edit?utm_content=DAGHxAJo_jw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
     - [wireframe](https://www.canva.com/design/DAGHwsnK8KQ/zjGfQ2WnddJBScql7dDwhg/edit)
+    - [ERD](https://www.canva.com/design/DAGHw-wdAdw/ciKQi4I4dDn5z2gQ7BjbNw/edit?utm_content=DAGHw-wdAdw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ---
 ### Deployment and Live Demo
