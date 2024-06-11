@@ -15,8 +15,8 @@ mongoose
 const createPosts = async () => {
   let posts = [...Array(10)].map((item, idx) => ({
     title: falso.randCatchPhrase().toString(),
-    body: falso.randPhrase().toString(),
-    image: `https://picsum.photos/500/500?random=${idx}`
+    caption: falso.randPhrase().toString()
+    // image: `https://picsum.photos/500/500?random=${idx}`
   }))
 
   await Post.deleteMany({})
