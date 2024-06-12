@@ -22,14 +22,16 @@ const show = async (req, res) => {
 
 const create = async (req, res) => {
   try {
-    const response = await getGroqChatCompletion('I want to lose weight, currently 80kg and 150cm')
+    const response = await getGroqChatCompletion(
+      'I want to lose weight, currently 80kg and 150cm'
+    )
 
-    console.log("the response", response);
+    console.log('the response', response)
 
     //create from the response of the api
     const mealPlan = await MealPlan.create(JSON.parse(response)) //({}) will be changed accordingly
 
-    console.log("meal plan item", mealPlan);
+    console.log('meal plan item', mealPlan)
     res.send(mealPlan)
   } catch (error) {
     throw error
