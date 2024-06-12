@@ -22,11 +22,10 @@ const create = async (req, res) => {
 
 const updateComment = async (req, res) => {
   try {
-    const comment = await Comment.findByIdAndUpdate(
-      req.params.comment_id,
-      req.body,
-      { new: true }
-    )
+    console.log(`reached ${req.body}`)
+    const comment = await Comment.findByIdAndUpdate(req.params.id, req.body, {
+      new: true
+    })
     res.send(comment)
   } catch (error) {
     throw error
