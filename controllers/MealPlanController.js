@@ -1,5 +1,5 @@
 const mongodb = require('mongodb')
-const MealPlan = require('../models/Mealplan')
+const { MealPlan } = require('../models')
 
 const index = async (req, res) => {
   try {
