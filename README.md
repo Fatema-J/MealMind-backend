@@ -66,4 +66,5 @@
 
 ### Credits
 
-- [List of third-party resources or contributors]
+- [chatgpt](https://chatgpt.com/) to engineer our prompts for the API
+- [groq](https://groq.com/) the AI api to generate customized plans
