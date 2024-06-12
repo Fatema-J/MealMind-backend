@@ -12,8 +12,10 @@ const index = async (req, res) => {
 
 const create = async (req, res) => {
   try {
-    //create from the response of the api
-    const comment = await Comment.create(req.body) //({}) will be changed accordingly
+    const comment = await Comment.create(req.body)
+
+    /// TODO: add the reference id to the post comments
+
     res.send(comment)
   } catch (error) {
     throw error
