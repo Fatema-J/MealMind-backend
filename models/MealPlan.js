@@ -6,11 +6,15 @@ const mealPlanSchema = new Schema(
     planName: String,
     planDescription: String,
     calories: Number,
-    category: String
+    category: String,
+    user: {
+      type: Schema.Types.ObjectId,
+      ref: 'User'
+    }
   },
   {
     timestamps: true
   }
 )
 
-module.exports = mongoose.model('MealPlan', mealPlanSchema)
+module.exports = mealPlanSchema
