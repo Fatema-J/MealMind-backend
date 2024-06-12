@@ -1,14 +1,35 @@
 var express = require('express')
 var router = express.Router()
 const mealPlanCtrl = require('../controllers/MealPlanController')
+const middleware = require('../middleware')
 
 //show all plans
-router.get('/', mealPlanCtrl.index)
+router.get(
+  '/',
+  middleware.stripToken,
+  middleware.verifyToken,
+  mealPlanCtrl.index
+)
 //show one plan
-router.get('/:id', mealPlanCtrl.show)
+router.get(
+  '/:id',
+  middleware.stripToken,
+  middleware.verifyToken,
+  mealPlanCtrl.show
+)
 //create new plan
-router.post('/', mealPlanCtrl.create)
+router.post(
+  '/',
+  middleware.stripToken,
+  middleware.verifyToken,
+  mealPlanCtrl.create
+)
 //delete plan
-router.delete('/:id', mealPlanCtrl.delete)
+router.delete(
+  '/:id',
+  middleware.stripToken,
+  middleware.verifyToken,
+  mealPlanCtrl.delete
+)
 
 module.exports = router
