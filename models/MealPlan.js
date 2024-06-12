@@ -6,7 +6,8 @@ const mealPlanSchema = new Schema(
     planName: String,
     planDescription: String,
     calories: Number,
-    category: String
+    category: String,
+    userRef: { type: Schema.Types.ObjectId, ref: 'User' }
   },
   {
     timestamps: true
