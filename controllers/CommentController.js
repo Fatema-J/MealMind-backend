@@ -1,5 +1,6 @@
 const mongodb = require('mongodb')
 const { Comment } = require('../models')
+const { Post } = require('../models')
 
 const index = async (req, res) => {
   try {
@@ -14,7 +15,10 @@ const create = async (req, res) => {
   try {
     const comment = await Comment.create(req.body)
 
-    /// TODO: add the reference id to the post comments
+    // adding the comment to the post
+    const post = await Post.findById(req.params.post_id);
+    post.comments.push(comment._id);
+    await post.save();
 
     res.send(comment)
   } catch (error) {
