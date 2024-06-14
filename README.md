@@ -10,6 +10,8 @@
 
 ### Overview
 
+![MealMind Logo](./images/logo.jpg)
+
 **_MealMind_** is an innovative web application designed to create personalized diet plans for users. By leveraging artificial intelligence, the app tailors meal recommendations based on user responses to a questionnaire. Whether you’re aiming for weight loss, muscle gain, or overall health improvement, our app has you covered.
 
 ---
@@ -29,8 +31,17 @@
    - `git@github.com:jenanalawadhi1/MealMind-FrontEnd.git`
 2. Install dependencies for each app (`npm install`).
 3. Set up your MongoDB database.
-4. Run the front-end and back-end servers.
-5. Access the app locally.
+4. Create .env file in the backend repository contains these varaibles
+
+```
+MONGODB_URI=<connection to mongodb>
+APP_SECRET=<random String>
+SALT_ROUNDS=<Number>
+GROQ_API_KEY=<api key for groq>
+```
+
+5. Run the front-end and back-end servers.
+6. Access the app locally.
 
 ---
 

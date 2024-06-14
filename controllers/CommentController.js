@@ -1,5 +1,6 @@
 const mongodb = require('mongodb')
 const { Comment } = require('../models')
+const { Post } = require('../models')
 
 const index = async (req, res) => {
   try {
@@ -12,8 +13,13 @@ const index = async (req, res) => {
 
 const create = async (req, res) => {
   try {
-    //create from the response of the api
-    const comment = await Comment.create(req.body) //({}) will be changed accordingly
+    const comment = await Comment.create(req.body)
+
+    // adding the comment to the post
+    const post = await Post.findById(req.params.post_id);
+    post.comments.push(comment._id);
+    await post.save();
+
     res.send(comment)
   } catch (error) {
     throw error
