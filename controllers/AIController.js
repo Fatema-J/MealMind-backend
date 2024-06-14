@@ -25,8 +25,6 @@ const getGroqChatCompletion = async (userResponse) => {
 
   const fullResponse = chatCompletion.choices[0]?.message?.content || ''
 
-  // console.log(fullResponse);
-  
   return fullResponse
 }
 
