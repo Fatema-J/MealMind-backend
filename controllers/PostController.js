@@ -2,7 +2,7 @@ const { Post } = require('../models')
 
 const GetPosts = async (req, res) => {
   try {
-    const posts = await Post.find({})
+    const posts = await Post.find({}).populate('user').populate('comments')
     res.send(posts)
   } catch (error) {
     throw error
