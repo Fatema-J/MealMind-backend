@@ -22,16 +22,21 @@ const show = async (req, res) => {
 
 const create = async (req, res) => {
   try {
-    const response = await getGroqChatCompletion(
-      'I want to lose weight, currently 80kg and 150cm'
-    )
+    // Extract user input from the request body
+    const userData = req.body
 
-    console.log('the response', response)
+    // Construct a user response string based on the extracted data
+    const userResponse = `I am ${userData.gender}, born on ${userData.dob}, currently weigh ${userData.weight}${userData.units.weight}, and am ${userData.height}${userData.units.height} tall. My goal is to ${userData.goal}. My activity level is ${userData.activityLevel}. I have dietary preferences of ${userData.dietaryRestrictions} and medical conditions of ${userData.medicalConditions}. My daily routine is ${userData.dailyRoutine} and I drink ${userData.waterIntake} glasses of water per day.`
 
-    //create from the response of the api
+    // Get the meal plan from Groq API
+    const response = await getGroqChatCompletion(userResponse)
+
+    console.log('The response from Groq API:', response)
+
+    // Create a new meal plan from the response
     const mealPlan = await MealPlan.create(JSON.parse(response)) //({}) will be changed accordingly
 
-    console.log('meal plan item', mealPlan)
+    console.log('Created meal plan item:', mealPlan)
     res.send(mealPlan)
   } catch (error) {
     throw error
