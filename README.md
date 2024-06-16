@@ -72,6 +72,7 @@ GROQ_API_KEY=<api key for groq>
 - [ ] Dark Theme
 - [ ] Different plan categories (Vegan, Keto, Gluten-free.. etc)
 - [ ] Upload image for the post
+- [x] Adding a feature of different units to be selected for both Height (cm/ ft) and Weight (kg/ lbs)
 
 ---
 
