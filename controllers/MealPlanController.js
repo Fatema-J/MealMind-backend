@@ -26,7 +26,7 @@ const create = async (req, res) => {
     const userData = req.body
 
     // Construct a user response string based on the extracted data
-    const userResponse = `I am ${userData.gender}, born on ${userData.dob}, currently weigh ${userData.weight}${userData.units.weight}, and am ${userData.height}${userData.units.height} tall. My goal is to ${userData.goal}. My activity level is ${userData.activityLevel}. I have dietary preferences of ${userData.dietaryRestrictions} and medical conditions of ${userData.medicalConditions}. My daily routine is ${userData.dailyRoutine} and I drink ${userData.waterIntake} glasses of water per day.`
+    const userResponse = `I am ${userData.gender}, born on ${userData.dob}, currently weight ${userData.weight}${userData.units.weight}, and am ${userData.height}${userData.units.height} tall. My goal is to ${userData.goal}. My activity level is ${userData.activityLevel}. I have dietary preferences of ${userData.dietaryRestrictions} and medical conditions of ${userData.medicalConditions}. My daily routine is ${userData.dailyRoutine} and I drink ${userData.waterIntake} of water per day.`
 
     // Get the meal plan from Groq API
     const response = await getGroqChatCompletion(userResponse)
