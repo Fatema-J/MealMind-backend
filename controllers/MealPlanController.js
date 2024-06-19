@@ -4,7 +4,9 @@ const { getGroqChatCompletion } = require('./AIController')
 
 const userMealPlans = async (req, res) => {
   try {
-    const userId = req.body.userId
+    console.log("reached");
+    const userId = req.query.userId;
+    console.log("user", userId);
     // Filter meal plans by user ID
     const mealPlans = await MealPlan.find({ userRef: userId })
     console.log('user mealPlans', mealPlans)
