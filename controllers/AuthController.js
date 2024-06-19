@@ -42,7 +42,8 @@ const Login = async (req, res) => {
       let payload = {
         id: user.id,
         email: user.email,
-        firstName: user.firstName
+        firstName: user.firstName,
+        lastName: user.lastName
       }
 
       let token = middleware.createToken(payload)
