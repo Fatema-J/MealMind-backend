@@ -9,8 +9,19 @@ const GetPosts = async (req, res) => {
   }
 }
 
+const GetPlanPosts = async (req, res) => {
+  try {
+    const posts = await Post.find({plan: req.params.plan_id}).populate('user').populate('comments')
+    res.send(posts)
+  } catch (error) {
+    throw error
+  }
+}
+
+
 const CreatePost = async (req, res) => {
   try {
+    console.log(req.body);
     const post = await Post.create({ ...req.body })
     res.send(post)
   } catch (error) {
@@ -38,6 +49,7 @@ const DeletePost = async (req, res) => {
 
 module.exports = {
   GetPosts,
+  GetPlanPosts,
   CreatePost,
   UpdatePost,
   DeletePost

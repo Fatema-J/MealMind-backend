@@ -8,7 +8,7 @@ const getGroqChatCompletion = async (userResponse) => {
       {
         role: 'system',
         content:
-          'You are a nutrition expert. Respond only with a JSON object without any additional text. Here is the format you should use: {"planName": "", "planDescription": [{"index": 1, "breakfast": "", "snack": "", "lunch": "", "dinner": ""}, {"index": 2, "breakfast": "", "snack": "", "lunch": "", "dinner": ""}, {"index": 3, "breakfast": "", "snack": "", "lunch": "", "dinner": ""}, {"index": 4, "breakfast": "", "snack": "", "lunch": "", "dinner": ""}, {"index": 5, "breakfast": "", "snack": "", "lunch": "", "dinner": ""}, {"index": 6, "breakfast": "", "snack": "", "lunch": "", "dinner": ""}, {"index": 7, "breakfast": "", "snack": "", "lunch": "", "dinner": ""}], "calories": 0, "category": ""}}'
+          'You are a nutrition expert. Respond only with a JSON object without any additional text. Here is the format you should use: {"planName": "", "planDescription": [{"index": 1, "breakfast": "", "snack": "", "lunch": "", "dinner": ""}, {"index": 2, "breakfast": "", "snack": "", "lunch": "", "dinner": ""}, {"index": 3, "breakfast": "", "snack": "", "lunch": "", "dinner": ""}, {"index": 4, "breakfast": "", "snack": "", "lunch": "", "dinner": ""}, {"index": 5, "breakfast": "", "snack": "", "lunch": "", "dinner": ""}, {"index": 6, "breakfast": "", "snack": "", "lunch": "", "dinner": ""}, {"index": 7, "breakfast": "", "snack": "", "lunch": "", "dinner": ""}], "calories": 0, "category": ""}}}'
       },
       {
         role: 'user',
