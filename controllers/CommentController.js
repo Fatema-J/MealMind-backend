@@ -30,8 +30,10 @@ const create = async (req, res) => {
 
 const updateComment = async (req, res) => {
   try {
-    console.log(`reached ${req.body}`)
-    const comment = await Comment.findByIdAndUpdate(req.params.id, req.body, {
+    console.log('here to update comment', req.body);
+    console.log('comment id', req.params.comment_id);
+    
+    const comment = await Comment.findByIdAndUpdate(req.params.comment_id, req.body, {
       new: true
     })
     res.send(comment)
