@@ -11,17 +11,31 @@ const GetPosts = async (req, res) => {
 
 const GetPlanPosts = async (req, res) => {
   try {
-    const posts = await Post.find({plan: req.params.plan_id}).populate('user').populate('comments')
+    const posts = await Post.find({ plan: req.params.plan_id })
+      .populate('user')
+      .populate('comments')
     res.send(posts)
   } catch (error) {
     throw error
   }
 }
 
+const GetOnePost = async (req, res) => {
+  try {
+    console.log('reached get one post')
+    const post = await Post.findById(req.params.post_id)
+      .populate('user')
+      .populate('comments')
+    console.log(post)
+    res.send(post)
+  } catch (error) {
+    throw error
+  }
+}
 
 const CreatePost = async (req, res) => {
   try {
-    console.log(req.body);
+    console.log(req.body)
     const post = await Post.create({ ...req.body })
     res.send(post)
   } catch (error) {
@@ -31,7 +45,9 @@ const CreatePost = async (req, res) => {
 
 const UpdatePost = async (req, res) => {
   try {
-    const post = await Post.findByIdAndUpdate(req.params.post_id, req.body, {new: true})
+    const post = await Post.findByIdAndUpdate(req.params.post_id, req.body, {
+      new: true
+    })
     res.send(post)
   } catch (error) {
     throw error
@@ -49,6 +65,7 @@ const DeletePost = async (req, res) => {
 
 module.exports = {
   GetPosts,
+  GetOnePost,
   GetPlanPosts,
   CreatePost,
   UpdatePost,
