@@ -13,6 +13,8 @@ const index = async (req, res) => {
 
 const create = async (req, res) => {
   try {
+    console.log('req.body', req.body);
+    
     const comment = await Comment.create(req.body)
 
     // adding the comment to the post

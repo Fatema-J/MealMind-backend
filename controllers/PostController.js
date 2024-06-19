@@ -22,11 +22,9 @@ const GetPlanPosts = async (req, res) => {
 
 const GetOnePost = async (req, res) => {
   try {
-    console.log('reached get one post')
     const post = await Post.findById(req.params.post_id)
       .populate('user')
       .populate('comments')
-    console.log(post)
     res.send(post)
   } catch (error) {
     throw error
