@@ -4,7 +4,7 @@ const { getGroqChatCompletion } = require('./AIController')
 
 const userMealPlans = async (req, res) => {
   try {
-    const userId = req.query.userId
+    const userId = req.body.userId
     // Filter meal plans by user ID
     const mealPlans = await MealPlan.find({ userRef: userId })
     console.log('user mealPlans', mealPlans)
@@ -30,6 +30,8 @@ const create = async (req, res) => {
 
     // extract user ID
     const userID = userData.user
+    console.log('userId', userID);
+    
     delete userData.user
 
     // Construct a user response string based on the extracted data
@@ -42,12 +44,12 @@ const create = async (req, res) => {
 
     // Adding userID to the response
     const parsedResponse = JSON.parse(response)
-    parsedResponse.user = userID
+    parsedResponse.userRef = userID
 
     console.log('Parsed response :', parsedResponse)
 
     // Create a new meal plan from the response
-    const mealPlan = await MealPlan.create(parsedResponse) //({}) will be changed accordingly
+    const mealPlan = await MealPlan.create(parsedResponse)
 
     console.log('Created meal plan item:', mealPlan)
     res.send(mealPlan)
