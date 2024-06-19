@@ -1,0 +1,14 @@
+{
+  "planName": "Maintain Current Weight for Busy Female with High Blood Pressure",
+  "planDescription": [
+  {"index": 1, "breakfast": "Oatmeal with almond milk and banana", "snack": "Apple slices with almond butter", "lunch": "Grilled chicken breast with quinoa and steamed vegetables", "dinner": "Baked salmon with sweet potato and broccoli"},
+  {"index": 2, "breakfast": "Avocado toast with scrambled eggs and whole wheat bread", "snack": "Carrot sticks with hummus", "lunch": "Turkey and avocado wrap with mixed greens", "dinner": "Slow cooker lentil soup with whole grain bread"},
+  {"index": 3, "breakfast": "Greek yogurt with mixed berries and granola", "snack": "Hard-boiled egg and cherry tomatoes", "lunch": "Grilled chicken breast with mixed greens and whole grain pita", "dinner": "Roasted chicken with roasted vegetables and brown rice"},
+  {"index": 4, "breakfast": "Smoothie bowl with almond milk, banana, and spinach", "snack": "Cucumber slices with guacamole", "lunch": "Turkey and cheese wrap with carrot sticks and hummus", "dinner": "Shrimp and vegetable stir-fry with brown rice"},
+  {"index": 5, "breakfast": "Avocado and egg toast with cherry tomatoes", "snack": "Rice cakes with almond butter and banana slices", "lunch": "Grilled chicken Caesar salad", "dinner": "Baked cod with quinoa and steamed asparagus"},
+  {"index": 6, "breakfast": "Omelette with bell peppers and onions", "snack": "Edamame and diced cucumber", "lunch": "Turkey and cheese sandwich on whole grain bread with carrot sticks", "dinner": "Slow cooker beef stew with whole grain bread"},
+  {"index": 7, "breakfast": "Chia seed pudding with almond milk and mixed berries", "snack": "Hummus with carrot and celery sticks", "lunch": "Grilled chicken breast with mixed greens and whole grain pita", "dinner": "Roasted chicken with roasted Brussels sprouts and brown rice"}
+  ],
+  "calories": 1800,
+  "category": "Female, 25-40 years, Moderately Active"
+}
