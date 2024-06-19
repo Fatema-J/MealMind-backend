@@ -2,9 +2,12 @@ const mongodb = require('mongodb')
 const { MealPlan } = require('../models')
 const { getGroqChatCompletion } = require('./AIController')
 
-const index = async (req, res) => {
+const userMealPlans = async (req, res) => {
   try {
-    const mealPlans = await MealPlan.find({})
+    const userId = req.query.userId
+    // Filter meal plans by user ID
+    const mealPlans = await MealPlan.find({ userRef: userId })
+    console.log('user mealPlans', mealPlans)
     res.send(mealPlans)
   } catch (error) {
     throw error
@@ -57,7 +60,7 @@ const deleteMealPlan = async (req, res) => {
 }
 
 module.exports = {
-  index,
+  index: userMealPlans,
   show,
   create,
   delete: deleteMealPlan
