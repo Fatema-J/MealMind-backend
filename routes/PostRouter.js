@@ -3,6 +3,7 @@ const controller = require('../controllers/PostController')
 const middleware = require('../middleware')
 
 router.get('/', controller.GetPosts)
+router.get('/:plan_id', controller.GetPlanPosts)
 router.post(
   '/',
   middleware.stripToken,
