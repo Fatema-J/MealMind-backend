@@ -19,14 +19,14 @@ router.post(
 )
 // update a comment
 router.put(
-  '/posts/comments/:id',
+  '/posts/:post_id/comments/:comment_id',
   middleware.stripToken,
   middleware.verifyToken,
   CommentCtrl.update
 )
 //delete a comment
 router.delete(
-  '/posts/comments/:id',
+  '/posts/:post_id/comments/:comment_id',
   middleware.stripToken,
   middleware.verifyToken,
   CommentCtrl.delete
