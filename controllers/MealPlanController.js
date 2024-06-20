@@ -56,7 +56,7 @@ const create = async (req, res) => {
     console.log('Created meal plan item:', mealPlan)
     res.send(mealPlan)
   } catch (error) {
-    throw error
+    console.error(error) 
   }
 }
 
