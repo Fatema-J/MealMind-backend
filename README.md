@@ -18,9 +18,9 @@
 
 ### Key Features
 
-1. Personalized Plan
-2. Publish and Share
-3. Community Interaction
+1. **Personalized Plan:** Answer a few questions, and MealMind generates personalized meal plans that align with your goals.
+2. **Publish and Share:** Post about your plans and share your experience with the community.
+3. **Community Interaction:** Other users can comment on your posts, share tips, encouragement, and success stories within the app.
 
 ---
 
@@ -48,10 +48,12 @@ GROQ_API_KEY=<api key for groq>
 ### Technologies Used
 
 - Front-end: **React**
-- Back-end: **Node.js, Express.js, MongoDB**
+- Back-end: **Node.js, Express.js**
+- Database: **MongoDB**
+- Deployment: **Render, Surge**
 - Project Management: **Trello, Slack**
 - Designing Phase: **Canva**
-  - [component hierarchy diagram](https://www.canva.com/design/DAGHxAJo_jw/vXaIVxrFJjrdfCSdMPg1ng/edit?utm_content=DAGHxAJo_jw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+  - [component hierarchy diagram](https://www.canva.com/design/DAGIbB5B3cc/hdEzlXEDCSl5Q7BdZt0lig/edit?utm_content=DAGIbB5B3cc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
   - [wireframe](https://www.canva.com/design/DAGHwsnK8KQ/zjGfQ2WnddJBScql7dDwhg/edit)
   - [ERD](https://www.canva.com/design/DAGHw-wdAdw/ciKQi4I4dDn5z2gQ7BjbNw/edit?utm_content=DAGHw-wdAdw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
@@ -59,7 +61,7 @@ GROQ_API_KEY=<api key for groq>
 
 ### Deployment and Live Demo
 
-- [Link to deployed site]
+- [MealMind deployed website](https://mealmind.surge.sh/)
 - [Trello board](https://trello.com/b/eIbm4xlp/mealmind)
 - Screenshots:
   ![Welcome Page](./images/MealMind%20UI.png)
@@ -74,10 +76,14 @@ GROQ_API_KEY=<api key for groq>
 - [ ] Upload image for the post
 - [ ] Random picture for plans
 - [x] Adding a feature of different units to be selected for both Height (cm/ ft) and Weight (kg/ lbs)
+- [ ] Track user progress in the plan
 
 ---
 
 ### Credits
 
+- Our Great Instructors at GA, to debug and explain parts we got stuck in.
 - [chatgpt](https://chatgpt.com/) to engineer our prompts for the API
 - [groq](https://groq.com/) the AI api to generate customized plans
+- [StackOverFlow](https://stackoverflow.com/), [GeeksforGeeks](https://www.geeksforgeeks.org/), [W3Schools](https://www.w3schools.com/) to solve issues in the code
+- [Ezgif](https://ezgif.com/) to remove the background of the "loading" gif 
