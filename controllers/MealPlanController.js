@@ -52,7 +52,9 @@ const create = async (req, res) => {
 
 const deleteMealPlan = async (req, res) => {
   try {
-    await MealPlan.deleteOne({ _id: req.params.id })
+    // await MealPlan.deleteOne({ _id: req.params.id })
+    // delete userRef instead of deleting the object
+    await MealPlan.findByIdAndUpdate(req.params.id,  { $unset: { userRef: 1 } })
     res.send({
       msg: 'Meal Plan Deleted',
       payload: req.params.id,
