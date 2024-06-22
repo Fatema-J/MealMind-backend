@@ -1,5 +1,5 @@
 const mongodb = require('mongodb')
-const { MealPlan } = require('../models')
+const { MealPlan, Post } = require('../models')
 const { getGroqChatCompletion } = require('./AIController')
 
 const userMealPlans = async (req, res) => {
@@ -53,6 +53,8 @@ const create = async (req, res) => {
 const deleteMealPlan = async (req, res) => {
   try {
     await MealPlan.deleteOne({ _id: req.params.id })
+    await Post.deleteMany({ plan: req.params.id })
+
     res.send({
       msg: 'Meal Plan Deleted',
       payload: req.params.id,
