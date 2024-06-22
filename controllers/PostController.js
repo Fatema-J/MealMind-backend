@@ -38,7 +38,6 @@ const GetOnePost = async (req, res) => {
 
 const CreatePost = async (req, res) => {
   try {
-    console.log(req.body)
     const post = await Post.create({ ...req.body })
     res.send(post)
   } catch (error) {
