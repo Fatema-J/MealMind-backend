@@ -71,12 +71,13 @@ GROQ_API_KEY=<api key for groq>
 
 ### Additional Features
 
-- [ ] Dark Theme
+- [x] Dark Theme
 - [x] Different plan categories (Vegan, Keto, Gluten-free.. etc)
-- [ ] Upload image for the post
-- [ ] Random picture for plans
+- [ ] Upload image by the user for the post
+- [x] Display random picture for each plan in My Plan page
 - [x] Adding a feature of different units to be selected for both Height (cm/ ft) and Weight (kg/ lbs)
 - [ ] Track user progress in the plan
+- [ ] Search for the plan
 
 ---
 
@@ -86,4 +87,4 @@ GROQ_API_KEY=<api key for groq>
 - [chatgpt](https://chatgpt.com/) to engineer our prompts for the API
 - [groq](https://groq.com/) the AI api to generate customized plans
 - [StackOverFlow](https://stackoverflow.com/), [GeeksforGeeks](https://www.geeksforgeeks.org/), [W3Schools](https://www.w3schools.com/) to solve issues in the code
-- [Ezgif](https://ezgif.com/) to remove the background of the "loading" gif 
+- [Ezgif](https://ezgif.com/) to remove the background of the "loading" gif
