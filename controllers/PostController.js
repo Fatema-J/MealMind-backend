@@ -24,7 +24,12 @@ const GetOnePost = async (req, res) => {
   try {
     const post = await Post.findById(req.params.post_id)
       .populate('user')
-      .populate('comments')
+      .populate({
+        path: 'comments',
+        populate: {
+          path: 'user'
+        }
+      })
     res.send(post)
   } catch (error) {
     throw error
