@@ -84,7 +84,8 @@ GROQ_API_KEY=<api key for groq>
 ### Credits
 
 - Our Great Instructors at GA, to debug and explain parts we got stuck in.
-- [chatgpt](https://chatgpt.com/) to engineer our prompts for the API
+- [promptingguide](https://www.promptingguide.ai/) to engineer our prompts for the API
 - [groq](https://groq.com/) the AI api to generate customized plans
 - [StackOverFlow](https://stackoverflow.com/), [GeeksforGeeks](https://www.geeksforgeeks.org/), [W3Schools](https://www.w3schools.com/) to solve issues in the code
 - [Ezgif](https://ezgif.com/) to remove the background of the "loading" gif
+- Loading GIF from [demilked](https://www.demilked.com/gif-animations-replace-loading-screen/)
