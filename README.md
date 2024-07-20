@@ -64,8 +64,22 @@ GROQ_API_KEY=<api key for groq>
 - [MealMind deployed website](https://mealmind.surge.sh/)
 - [Trello board](https://trello.com/b/eIbm4xlp/mealmind)
 - Screenshots:
-  ![Welcome Page](./images/MealMind%20UI.png)
-  ![Login Page](./images/MealMind%20Login%20UI.png)
+
+**_Wireframe_**
+<div align="center">
+  <pre>
+    <img src="./images/MealMind%20UI.png" />&nbsp;&nbsp;&nbsp;<img src="./images/MealMind%20Login%20UI.png" />&nbsp;&nbsp;&nbsp;<img src="./images/Feed UI.png" />&nbsp;&nbsp;&nbsp;
+  </pre>
+</div
+
+
+
+**_Website_**
+  <div align="center">
+  <pre>
+    <img src="./images/homepage.png" />&nbsp;&nbsp;&nbsp;<img src="./images/loginpage.png" />&nbsp;&nbsp;&nbsp;<img src="./images/myplanspage.png" />&nbsp;&nbsp;&nbsp;<img src="./images/mealplanpage.png" />&nbsp;&nbsp;&nbsp;<img src="./images/postspage.png" />&nbsp;&nbsp;&nbsp;<img src="./images/darkmodepage.png" />&nbsp;&nbsp;&nbsp;
+  </pre>
+</div>
 
 ---
 
